@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Etiquetas HTML</title>
+</head>
+<body>
+    <section id="inicio">
+        <h1>Apuntes HTML</h1>
+        <h4>Nombre: Rodrigo Erick Choque Mayta</h4>
+        <img src="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg" alt="" width="700px">
+    </section>
+    <section>
+        <h2>Menú HTML</h2>
+        <ol class="menu">
+            <li><a href="#iniciales"><h4 class="menu">Etiquetas iniciales o de raíz</h4></a></li>
+            <li><a href="#metadatos"><h4 class="menu">Metadatos del documento</h4></a></li>
+            <li><a href="#secciones"><h4 class="menu">Etiquetas de secciones o para estructurar el HTML</h4></a></li>
+            <li><a href="#contenido"><h4 class="menu">Etiquetas para la agrupación de contenido</h4></a></li>
+            <li><a href="#texto"><h4 class="menu">Etiquetas semánticas para texto</h4></a></li>
+            <li><a href="#incrustar"><h4 class="menu">Etiquetas para incrustar contenido</h4></a></li>
+            <li><a href="#tablas"><h4 class="menu">Etiquetas para la creación de tablas</h4></a></li>
+            <li><a href="#formularios"><h4 class="menu">Etiquetas para la creación de formularios</h4></a></li>
+        </ol>
+    </section>
+    <section>
+        <h2>Menú CSS</h2>
+        <ol class="menu">
+           <li><a href="#que"><h4 class="menu">Introducción a CSS</h4></a></li>
+           <li><a href="#como"><h4 class="menu">Como usarlo</h4></a></li>
+           <li><a href="#sintaxis"><h4 class="menu">Sintaxis</h4></a></li>
+           <li><a href="#selectores"><h4 class="menu">Selectores</h4></a></li>
+           <li><a href="#comentarios"><h4 class="menu">Comentarios</h4></a></li>
+           <li><a href="#colores"><h4 class="menu">Colores</h4></a></li>
+           <li><a href="#fondos"><h4 class="menu">Fondos</h4></a></li>
+           <li><a href="#bordes"><h4 class="menu">Bordes</h4></a></li>
+           <li><a href="#margenes"><h4 class="menu">Márgenes</h4></a></li>
+           <li><a href="#altura"><h4 class="menu">Altura/Ancho</h4></a></li> 
+        </ol>
+    </section>
+    <section>                
+        <h2>Listado etiquetas HTML</h2>
+        <ol>
+            <div id="iniciales">
+            <li><h3>Etiquetas iniciales o de raíz</h3></li>
+                <ul>
+                    <li><h4>Etiqueta: &lt;!DOCTYPE html&gt;</h4></li>
+                        <dd>Indica al navegador que el documento está basado en el estándar HTML5</dd>
+                        <dd><br><img src="https://www.scaler.com/topics/images/doctype-html_thumbnail.webp" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;html&gt;&lt;/html&gt;</h4></li>
+                        <dd>Representa la raíz de un documento HTML. Todos los demás elementos de la estructura HTML deben ser recogidos dentro de estas etiquetas.</dd>
+                        <dd><br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/HTML_logo.png/250px-HTML_logo.png" alt="" width="350px"></dd>
+                </ul>
+            </div>
+            <div id="metadatos">
+            <li><h3>Metadatos del documento</h3></li>
+                <ul>
+                    <li><h4>Etiqueta: &lt;head&gt;&lt;/head&gt;</h4></li>
+                        <dd>Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo. El resto de etiquetas de metadatos, <strong>irán recogidas dentro de las etiquetas de apertura y cierre del head.</strong> Importante explicar que estos metadatos del documento, es información para el navegador y no contenido que será visible en la página web. A excepción de la etiqueta &lt;title&gt; que veremos a continuación.</dd>
+                        <dd><br><img src="https://habitant.es/wp-content/uploads/2020/02/estructura-html-seo.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;title&gt;&lt;/title&gt;</h4></li>
+                        <dd>Etiqueta usada para definir el título de la página web.</dd>
+                        <dd><br><img src="https://personales.unican.es/alvareze/multimedia/master/2_Incorporando/images/pic007.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;link&gt;</h4></li>
+                        <dd>Se usa para enlazar recursos externos al documento HTML. El ejemplo más común son <strong>las hojas de estilos CSS.</strong></dd>
+                        <dd><br><img src="https://misapuntesyacimientos.files.wordpress.com/2016/02/cssrefext-6.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;meta&gt;</h4></li>
+                        <dd>Etiqueta usada para definir otros metadatos que no se pueden definir con una etiqueta HTML especifica. Por ejemplo para definir el autor del sitio, o la descripción del mismo.</dd>
+                        <dd><br><img src="https://www.federicoperichon.com.ar/wp-content/uploads/2009/08/meta-tag.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;style&gt;&lt;/style&gt;</h4></li>
+                        <dd>Etiquetas usadas para introducir código CSS en línea, es decir, en el propio documento HTML.</dd>
+                        <dd><br><img src="https://i2.wp.com/www.webdisenia.com/wp-content/uploads/2015/05/002.png" alt="" width="350px"></dd>
+                </ul>
+            </div>
+            <div id="secciones">
+            <li><h3>Etiquetas de secciones o para estructurar el HTML</h3></li>
+                <ul>
+                    <li><h4>Etiqueta: &lt;body&gt;&lt;/body&gt;</h4></li>
+                        <dd>Al contrario que la etiqueta de metadatos &lt;head&gt;, todo lo que quieras mostrar en la página web debe ir recogido dentro de las etiquetas de apertura y cierre de &lt;body&gt;. <strong>Este contenido será el que se muestre en la web.</strong></dd>
+                        <dd><br><img src="https://www.picuino.com/es/_images/html-body-html.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;nav&gt;&lt;/nav&gt;</h4></li>
+                        <dd>Usadas para definir el contenido que será la sección de navegación de la web.</dd>
+                        <dd><br><img src="https://www.anerbarrena.com/wp-content/uploads/2015/05/etiquetas-semanticas-html5.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;main&gt;&lt;/main&gt;</h4></li>
+                        <dd>Se usa para definir el contenido principal del documento. Solamente puede existir uno por documento.</dd>
+                        <dd><br><img src="https://www.htmlcinco.com/wp-content/uploads/2013/11/html5-elemento-main.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;section&gt;&lt;/section&gt;</h4></li>
+                        <dd>Define una sección del documento</dd>
+                        <dd><br><img src="http://3.bp.blogspot.com/--CTJJLnLzAs/VOAEZgKF-II/AAAAAAAAAbE/DmPWyYUKmyI/s1600/etiquetas-de-estructura-html5.gif" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;article&gt;&lt;/article&gt;</h4></li>
+                        <dd>Define contenido independiente de la web.</dd>
+                        <dd><br><img src="https://sites.google.com/site/html5nuevasfunciones/_/rsrc/1468757288982/--que-es-html/4-article/5.png?height=277&width=400" alt=""></dd>
+                    <li><h4>Etiqueta: &lt;aside&gt;&lt;/aside&gt;</h4></li>
+                        <dd>Dentro de estas etiquetas suele alojarse el contenido adicional de la web. Suele ser contenido relacionado con la web pero de poca importancia.</dd>
+                        <dd><br><img src="https://imacreste.com/wp-content/uploads/etiquetas-estructurales-html5.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiquetas de titulo: &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</h4></li>
+                        <dd>Son etiquetas HTML muy importantes, ya que son usadas para jerarquizar el contenido de la web. Las etiquetas se usan para explicar brevemente el contenido que irá a continuación.</dd>
+                        <dd><br><img src="https://ecdisis.com/wp-content/uploads/2020/10/h1h1h3.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;header&gt;&lt;/header&gt;</h4></li>
+                        <dd>Se usan para definir la cabecera la página web. Suele contener el logotipo, menú de navegación, etc.</dd>
+                        <dd><br><img src="https://sites.google.com/site/html5nuevasfunciones/_/rsrc/1468757290989/--que-es-html/2-header/1.png?height=270&width=400" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;footer&gt;&lt;/footer&gt;</h4></li>
+                        <dd>Usadas para definir el pie de página.</dd>
+                        <dd><br><img src="https://i.stack.imgur.com/YvCtc.jpg" alt="" width="350px"></dd>
+                </ul>
+            </div>
+            <div id="contenido">
+            <li><h3>Etiquetas para la agrupación de contenido</h3></li>
+                <ul>
+                    <li><h4>Etiqueta: &lt;p&gt;&lt;/p&gt;</h4></li>
+                        <dd>Etiqueta usada para escribir párrafos de texto.</dd>
+                        <dd><br><img src="https://www.ampersoundmedia.com/wp-content/uploads/2020/07/html-1200x534.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;hr&gt;</h4></li>
+                        <dd>Etiqueta utilizada para «romper» entre dos secciones de una web. Usada comúnmente como separador.</dd>
+                        <dd><br><img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/f1104.gif" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;pre&gt;&lt;/pre&gt;</h4></li>
+                        <dd>Usada para pegar texto manteniendo el pre formato propio del texto.</dd>
+                        <dd><br><img src="https://www.picuino.com/es/_images/html-pre-web.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;blockquote&gt;&lt;/blockquote&gt;</h4></li>
+                        <dd>Se usan para indicar que el contenido es texto citado.</dd>
+                        <dd><br><img src="http://4.bp.blogspot.com/-H0Lh-nNIdF8/T-E6aG3szaI/AAAAAAAAAFU/ak07nW7Oh7c/s1600/IMAGEN+2.12.gif" alt="" width="350px"></dd>
+                    <li><h4>Etiquetas: de listas</h4></li>
+                        <dd><br><img src="https://3.bp.blogspot.com/--I3kkqC6O6s/WhM901FxyfI/AAAAAAAAL-E/fHuCB9vZKO8Oi7LjH7EuMnjOLNcu0RNdQCLcBGAs/s1600/tipos%2Bde%2Blistas%2Bhtml.JPG" alt="" width="550px"></dd>
+                    <li><h4>Etiqueta: &lt;ol&gt;&lt;/ol&gt;</h4></li>
+                        <dd>Etiquetas para crear una lista ordenada.</dd>
+                    <li><h4>Etiqueta: &lt;ul&gt;&lt;/ul&gt;</h4></li>
+                        <dd>Etiquetas para crear una lista des-ordenada.</dd>
+                    <li><h4>Etiqueta: &lt;li&gt;&lt;/li&gt;</h4></li>
+                        <dd>Etiquetas que recogen el contenido de un elemento de una lista, sea ordenada o no.</dd>
+                    <li><h4>Etiqueta: &lt;dl&gt;&lt;/dl&gt;</h4></li>
+                        <dd>Usada para crear una lista de definiciones.</dd>
+                    <li><h4>Etiqueta: &lt;dt&gt;&lt;/dt&gt;</h4></li>
+                        <dd>Representa un término definido por la siguiente etiqueta &lt;dd&gt;.</ltdd>
+                    <li><h4>Etiqueta: &lt;dd&gt;&lt;/dd&gt;</h4></li>
+                        <dd>Se usa para definir los términos listados antes que él.</dd>                        
+                    <li><h4>Etiqueta: &lt;figure&gt;&lt;/figure&gt;</h4></li>
+                        <dd>Indica una figura ilustrada como parte del documento HTML5.</dd>
+                        <dd><br><img src="https://4.bp.blogspot.com/-_V9suE7QNbw/W410jrM7j5I/AAAAAAAABFU/-X0zNhmEY2wPDef3dSqrDT-rsMVHFYYZgCLcBGAs/s1600/figure-figcaption-ejemplo.JPG" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;figcaption&gt;&lt;/figcaption&gt;</h4></li>
+                        <dd>Utilizada para definir la leyenda de una figura.</dd>
+                    <li><h4>Etiqueta: &lt;div&gt;&lt;/div&gt;</h4></li>
+                        <dd>Etiqueta común utilizada para crear un contenedor genérico.</dd>
+                        <dd><br><img src="https://www.picuino.com/en/_images/css-div-web.png" alt="" width="350px"></dd>
+                </ul>
+            </div>
+            <div id="texto">
+            <li><h3>Etiquetas semánticas para texto</h3></li>
+                <ul>
+                    <li><h4>Etiqueta: &lt;a&gt;&lt;/a&gt;</h4></li>
+                        <dd>Etiqueta utilizada para crear hiperenlaces en el documento HTML.</dd>
+                        <dd><br><img src="https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/imgscursoweb-03_xl.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;strong&gt;&lt;/strong&gt;</h4></li>
+                        <dd>Etiqueta para definir una palabra o conjunto de ellas como importantes. <strong>Tiene una fuerte importancia en el SEO de la página.</strong></dd>
+                        <dd></dd>
+                        <dd><br><img src="https://www.picuino.com/es/_images/html-strong-web.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;small&gt;&lt;/small&gt;</h4></li>
+                        <dd>Utilizada para dejar un comentario aparte, del tipo una nota de derechos de autoría, u otros textos que no son esenciales para la comprensión del documento.</dd>
+                        <dd><br><img src="https://htmldesdecero.es/medios/2021/12/Ejemplo-1-etiqueta-small.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;cite&gt;&lt;/cite&gt;</h4></li>
+                        <dd>Para indicar el título de una obra</dd>
+                        <dd><br><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210205112939/cite1-300x151.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;b&gt;&lt;/b&gt;</h4></li>
+                        <dd>Esta etiqueta permitira insertar texto en negrita.</dd>
+                        <dd><br><img src="http://2.bp.blogspot.com/_ARwwLyfrY50/TKNhsVNcSoI/AAAAAAAAABk/QDkxpWfhilU/s1600/negrita.JPG" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;i&gt;&lt;/i&gt;</h4></li>
+                        <dd>Nos permite insertar texto en cursiva.</dd>
+                        <dd><br><h1><i>Cursiva</i></h1></dd>
+                    <li><h4>Etiqueta: &lt;em&gt;&lt;/em&gt;</h4></li>
+                        <dd>Sirve para enfatizar un texto, es similar a I.</dd>
+                        <dd><br><img src="https://www.tutorialesprogramacionya.com/htmlya/temarios/imagentema/foto002.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;sub&gt;&lt;/sub&gt;</h4></li>
+                        <dd>Usada para crear un subindice</dd>
+                        <dd><br><img src="https://image.slidesharecdn.com/homelocallaureanaguerra1-090624093420-phpapp01/75/etiquetas-html-4-2048.jpg?cb=1668673455" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;sup&gt;&lt;/sup&gt;</h4></li>
+                        <dd>Usada para crear un supindice</dd>
+                        <dd><br><img src="https://image.slidesharecdn.com/homelocallaureanaguerra1-090624093420-phpapp01/85/etiquetas-html-6-320.jpg?cb=1668673455" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;mark&gt;&lt;/mark&gt;</h4></li>
+                        <dd>Usada para resaltar texto</dd>
+                        <dd><br><img src="https://static.javatpoint.com/htmlpages/images/html-mark-tag.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;span&gt;&lt;/span&gt;</h4></li>
+                        <dd>Etiqueta HTML sin ningún significado específico. Se usa conjuntamente con los atributos «class» o «id» para atribuirle ciertas características.</dd>
+                        <dd><br><img src="https://www.freecodecamp.org/espanol/news/content/images/2022/07/span-tag.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;br&gt;</h4></li>
+                        <dd>Etiqueta utilizada para crear un salto de línea</dd>
+                        <dd><br><img src="https://www.abrirllave.com/html/images/uso-elemento-br-chrome.gif" alt="" width="350px"></dd>
+                </ul>
+            </div>
+            <div id="incrustar">
+            <li><h3>Etiquetas para incrustar contenido</h3></li>
+                <ul>
+                    <li><h4>Etiqueta: &lt;img&gt;</h4></li>
+                        <dd>Etiqueta para «pintar» una imagen en la página web.</dd>
+                        <dd><br><img src="https://i0.wp.com/www.irinadelgado.com/wp-content/uploads/2020/04/etiquetas-y-atributos-hmtl-3.png?resize=518%2C322&ssl=1" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;iframe&gt;&lt;/iframe&gt;</h4></li>
+                        <dd>Es una etiqueta que sirve para anidar otro documento HTML dentro del documento principal.</dd>
+                        <dd><br><img src="https://akus.b-cdn.net/imagenes/articulos/iframe-html.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;embed&gt;</h4></li>
+                        <dd>Usada para integrar una aplicación o contenido interactivo externo que no suele ser HTML.</dd>
+                        <dd><br><img src="https://disenowebakus.net/imagenes/tag-embed-incrustacion-de-animacion-flash-web.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;object&gt;&lt;/object&gt;</h4></li>
+                        <dd>Utilizada llamar a un recurso externo de la web. Este recurso será tratado como una imagen, o un recurso externo para ser procesado por un plugin.</dd>
+                        <dd><br><img src="https://www.picuino.com/es/_images/html-object-youtube-web.png" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;video&gt;&lt;/video&gt;</h4></li>
+                        <dd>Se usa para reproducir video en la página web junto a sus archivos de audio y capciones asociadas.</dd>
+                        <dd><br><video width="350" controls src="img/The Notorious BIG  Juicy.mp4"></video></dd>
+                    <li><h4>Etiqueta: &lt;audio&gt;&lt;/audio&gt;</h4></li>
+                        <dd>Usada para cargar en una web un archivo de audio o stream de audio.</dd>
+                        <dd><br><audio controls src="img/The Notorious BIG  Juicy.mp3"></audio></dd>
+                    <li><h4>Etiqueta: &lt;source&gt;</h4></li>
+                        <dd>Permite a autores especificar recursos multimedia alternativos para las etiquetas de &lt;video&gt; o &lt;audio&gt;&lt;/audio&gt;</dd>                       
+                    <li><h4>Etiqueta: &lt;svg&gt;&lt;/svg&gt;</h4></li>
+                        <dd>Se usa para llamar a una imagen vectorizada.</dd>
+                        <dd><br><img src="https://www.espai.es/blog/wp-content/uploads/2016/03/svg.jpg" alt="" width="350px"></dd>
+                </ul>
+            </div>
+            <div id="tablas">
+            <li><h3>Etiquetas para la creación de tablas</h3></li>
+                <ul>
+                    <li><h4>Etiqueta: &lt;table&gt;&lt;/table&gt;</h4></li>
+                        <dd>Etiquetas de apertura y cierre de una tabla. El resto de etiquetas de la tabla han de ir siempre recogidas entre estas dos etiquetas.</dd>
+                        <dd><br><img src="https://francescricart.com/wp-content/uploads/2018/02/thead-tbody-tfoot-caption.jpg" alt="" width="700px"></dd>
+                    <li><h4>Etiqueta: &lt;caption&gt;&lt;/caption&gt;</h4></li>
+                        <dd>Usada para indicar el título de la tabla.</dd>
+                    <li><h4>Etiqueta: &lt;colgroup&gt;&lt;/colgroup&gt;</h4></li>
+                        <dd>Etiqueta utilizada para agrupar dos o más columnas de una tabla.</dd>
+                    <li><h4>Etiqueta: &lt;tbody&gt;&lt;/tbody&gt;</h4></li>
+                        <dd>Usada para describir los datos concretos de una tabla.</dd>
+                    <li><h4>Etiqueta: &lt;thead&gt;&lt;/thead&gt;</h4></li>
+                        <dd>Indica el bloque de filas que describen las etiquetas de las columnas de la tabla.</dd>
+                    <li><h4>Etiqueta: &lt;tfoot&gt;&lt;/tfoot&gt;</h4></li>
+                        <dd>Indica los bloques de filas que describen los resúmenes, o datos totales de una columna de una tabla.</dd>
+                    <li><h4>Etiqueta: &lt;tr&gt;&lt;/tr&gt;</h4></li>
+                        <dd>Se usa para indicar una fila de celdas de una tabla.</dd>
+                    <li><h4>Etiqueta: &lt;td&gt;&lt;/td&gt;</h4></li>
+                        <dd>Usada para definir una celda de una tabla.</dd>
+                    <li><h4>Etiqueta: &lt;th&gt;&lt;/th&gt;</h4></li>
+                        <dd>Etiqueta que se usa para definir el encabezado de una celda.</dd>
+                </ul>
+            </div>
+            <div id="formularios">
+            <li><h3>Etiquetas para la creación de formularios</h3></li>
+                <ul>
+                    <li><h4>Etiqueta: &lt;form&gt;&lt;/form&gt;</h4></li>
+                        <dd>Etiqueta de apertura y cierre de un formulario de una página web. El resto de etiquetas de formulario deben ir siempre recogidas entre estas etiquetas de apertura y cierre de formulario.</dd>
+                        <dd><br><img src="http://javadesde0.com/wp-content/uploads/Screenshot_15-7.jpg" alt="" width="500px"></dd>
+                    <li><h4>Etiqueta: &lt;fieldset&gt;&lt;/fieldset&gt;</h4></li>
+                        <dd>Etiqueta que representa un conjunto o agrupación de elementos de un formulario. «Pinta» un recuadro alrededor de las etiquetas que estén contenidas dentro del &lt;fieldset&gt;</dd>
+                        <dd><br><img src="https://1.bp.blogspot.com/-r7eAHEhpvos/WPTqJaNDFII/AAAAAAAAAIU/5NhMxHo3kZcpO12czDCJnW18OnxAbUSLQCLcB/s1600/legend.JPG" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;legend&gt;&lt;/legend&gt;</h4></li>
+                        <dd>Etiqueta ligada a &lt;fieldset&gt;. Indica el título del &lt;fieldset&gt;</dd>
+                    <li><h4>Etiqueta: &lt;label&gt;&lt;/label&gt;</h4></li>
+                        <dd>Se usa para definir el nombre o título de un control del formulario.</dd>
+                    <li><h4>Etiqueta: &lt;input&gt;</h4></li>
+                        <dd>Pinta un campo de introducción de datos para el usuario. Es de las principales etiquetas de un formulario.</dd>
+                        <dd><br><img src="https://i.ytimg.com/vi/Pty7aurTGF4/maxresdefault.jpg" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;button&gt;&lt;/button&gt;</h4></li>
+                        <dd>Etiqueta utilizada para representar un botón en el formulario.</dd>
+                        <dd><br><img src="https://i.stack.imgur.com/bMTDv.gif" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;select&gt;&lt;/select&gt;</h4></li>
+                        <dd>Input que permite una selección entre un conjunto de opciones.</dd>
+                        <dd><br><img src="https://1.bp.blogspot.com/-52h4wGnRdAI/WPTpVUPovyI/AAAAAAAAAIA/nw5RtO6p9IcrEALJM-DoOnFct4r12ugZQCLcB/s1600/option1.JPG" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;option&gt;&lt;/option&gt;</h4></li>
+                        <dd>Etiqueta ligada a &lt;select&gt;. Permite añadir diferentes opciones al &lt;select&gt;.</dd>
+                        <dd><br><img src="https://1.bp.blogspot.com/-52h4wGnRdAI/WPTpVUPovyI/AAAAAAAAAIA/nw5RtO6p9IcrEALJM-DoOnFct4r12ugZQCLcB/s1600/option1.JPG" alt="" width="350px"></dd>
+                    <li><h4>Etiqueta: &lt;textarea&gt;&lt;/textarea&gt;</h4></li>
+                        <dd>Añade un campo al usuario para que pueda introducir texto en unas líneas máximas de texto que el desarrollador puede definir.</dd>
+                        <dd><br><img src="https://www.arkaitzgarro.com/xhtml/images/cap09/formulario_sencillo.png" alt="" width="350px"></dd>
+                </ul>
+            </div>            
+        </ol>                    
+    </section>    
+    <section>
+        Estilos en CSS
+    <ol>
+        <div id="introduccion">
+            <li>Introducción a CSS</li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="" width="350px">        
+            <p>
+                Que es CSS? <br>
+                CSS(Cascade Style Sheets) Hojas de estilo en cascada, nos sirve para crear diversos estilos para nuestros elementos en HTML. Pudiendo definir de forma estructurada, la manera en la cual se organizarán estos estilos.
+                CSS, nos permite ahorrarnos mucho trabajo, ya que al crear una plantilla de estilos que puede ser aplicacada rapídamente, evitamos tener que crear un estilo individual para cada elemento.
+            </p>
+        </div>
+        <div id="como">
+            <li>Como usarlo</li>
+        <p>
+            Existen 3 formas de utilizar CSS
+            <ul>
+                <li>Externa</li>
+                Para utilizar el código css de forma externa podemos utililizar un archivo diferente dedicado exclusivamente al código css. <br>
+                Para ello utilizamos la etiqueta <br>
+                <code>
+                    link rel="stylesheet" href="miestilo.css"
+                </code>
+                <li>Interna</li>
+                También podemos usar el código CSS en nuestra página HTML usando la etiqueta: <br>
+                <code>
+                    &lt;style&gt; <br>
+                        body{
+                            color: green;
+                        } <br>
+                    &lt;/style&gt;
+                </code>
+                <li>En línea</li>
+            </ul>
+        </p>
+        </div>
+        <div id="sintaxis">
+            <li>Sintaxis</li>
+            <img src="https://hablacode.org/static/media/selector.bc73474e.png" alt="">
+        <p>            
+            La sintaxis de CSS es el conjunto de reglas que definen cómo escribir código en CSS. Estas reglas definen cómo se deben estructurar las reglas de estilo y cómo se deben combinar los selectores, propiedades y valores para producir un diseño coherente en una página web.  
+            <ul>
+                <li>Cambiar el color del texto</li>
+                <li>Cambiar el tamaño de la fuente</li>
+                <li>Cambiar el fondo</li>
+            </ul>          
+        </p>
+        </div>
+        <div id="selectores">
+            <li>Selectores</li>
+            <img src="https://desarrolloweb.com/media/144/CSS-selectores.jpg" alt="">
+        <p>            
+            Los selectores son la forma en que se apunta a los elementos HTML que se quieren estilizar. Los selectores pueden ser de diferentes tipos, como de etiqueta, de clase, de ID, entre otros.  
+            <ul>
+                <li>Selectores de etiqueta:</li>
+                Estos selectores apuntan a elementos HTML específicos. Por ejemplo, el selector de etiqueta p apuntaría a todos los elementos &lt;p&gt; en la página.
+                <li>Selectores de clase:</li>
+                Los selectores de clase apuntan a elementos HTML que tienen una clase específica. Por ejemplo, el selector .mi-clase apuntaría a todos los elementos que tienen la clase mi-clase.
+                <li>Selectores de ID:</li>
+                Los selectores de ID apuntan a elementos HTML que tienen un ID específico. Por ejemplo, el selector #mi-id apuntaría al elemento que tiene el ID mi-id.
+            </ul>          
+        </p>
+        </div>
+        <div id="comentarios">
+            <li>Comentarios</li>
+            <img src="https://www.aulafacil.com/uploads/cursos/350/editor/css-lecc-10_10-1.jpg" alt="">
+        <p>
+            Existen dos tipos de comentarios en CSS:
+            <ul>
+                <li>Comentarios de una línea CSS</li>
+                Los comentarios de una línea se especifican con el símbolo barra seguido de un asterisco. Para cerrar el comentario se hace a la inversa, primero asterisco y finalmente la barra. Se pueden situar arriba de cualquier línea o a un lado. <br> <br>
+                /* Este es un selector de agrupación que afecta a h1, h2 y p */ <br>
+                h1, h2, p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    text-align: center;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    color: deepskyblue;<br>
+                }
+                <li>Comentarios multilínea en CSS</li>
+                Los comentarios multilínea en CSS no cambian, simplemente, inicia el comentario en una línea y ciérralo en otra línea.
+                Se utilizan o bien para una explicación o detalle de varias líneas o para anular ciertas partes de tu hoja de estilos, de modo que no tengas que borrarlas por si las necesitas más adelante. <br><br>
+                /* Este comentario anula todo lo que se encuentra entre su apertura y su cierre. <br>
+                h1, h2, p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    
+                    text-align:  center;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    color: deepskyblue;<br>
+                } */
+            </ul>
+        </p>
+        </div>
+        <div id="colores">
+            <li>Colores</li>
+            <img src="https://enmarcdesarrolloweb.files.wordpress.com/2017/05/colors.png?w=620" alt="">
+        <p>
+            Los colores en CSS se pueden indicar de cinco formas diferentes: palabras clave, colores del sistema, RGB hexadecimal, RGB numérico y RGB porcentual. Aunque el método más habitual es el del RGB hexadecimal, a continuación se muestran todas las alternativas que ofrece CSS.
+            <ul>
+                <li>Palabras clave</li>
+                CSS define 17 palabras clave para referirse a los colores básicos. Las palabras se corresponden con el nombre en inglés de cada color:
+                aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange, purple, red, silver, teal, white, yellow
+                <li>RGB decimal</li>
+                <li>RGB porcentual</li>
+                <li>RGB hexadecimal</li>
+                <li>Colores del sistema</li>
+                <li>Colores web safe</li>                
+            </ul>
+        </p>
+        </div>
+        <div id="fondos">
+            <li>Fondos</li>
+            <img src="https://desarrolloweb.com/media/267/fondos-css.png" alt="">
+        <p>
+            CSS permite establecer de forma simultánea un color y una imagen de fondo. En este caso, la imagen se muestra delante del color, por lo que solamente si la imagen contiene zonas transparentes es posible ver el color de fondo.
+            <ul>
+                <li>Como aplicar fondos de color con CSS</li>
+                La manera más sencilla de aplicar un fondo es usar la propiedad background-color, indicando a continuación el RGB del color que deseamos aplicar. <br> <br>
+                body { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #0f1473;<br>
+                }
+                <li>Cómo aplicar fondos de imagen con CSS</li>
+                También podemos aplicar un fondo con una imagen, con el atributo background-image, de la siguiente manera. <br><br>
+                body { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-image: url(fondo-degradado.png) <br>
+                }
+                <li>Otros atributos para definir el fondo con CSS</li>
+                <ul>
+                    <li>background-repeat</li>
+                    Este atributo es el que tiene la responsabilidad de decidir si realmente queremos que una imagen se muestre como un mosaico, o si queremos que aparezca una única vez.
+                    <br><br>
+                    body { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-image: url(patron.png); <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    background-repeat: no-repeat;<br>
+                    }
+                    <li>background-position</li>
+                    Este atributo te sirve para definir dónde se va a colocar el fondo, sobre el elemento o sobre la página. Inicialmente la posición será "0 0", lo que quiere decir que la esquina superior izquierda de la imagen se colocará en la esquina superior izquierda del elemento al que se haya aplicado el fondo. <br><br>
+                    body { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        background-image: url(fondo.png);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        background-position: center;<br>
+                    }
+                    <li>background-size</li>
+                    Este atributo resulta muy potente para definir no solo el tamaño del fondo sino también cómo va a cubrir todo el elemento donde lo pongamos.
+                    Por ejemplo, una configuración muy útil es "cover" que permite que el fondo cubra todo el espacio disponible.
+                    <br><br>
+                    body {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        background-image: url(fondo-css.jpg);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        background-size: cover;<br>
+                    }
+                    <li>background-attachment</li>
+                    Este atributo CSS aplica a la manera que tiene el fondo de engancharse al contenedor, en caso que se pueda hacer desplazamiento sobre él. La verdad es que no se usa demasiado, pero puede servir para hacer algunos efectos interesantes.
+                    Sus tres valores posibles son scroll, fixed y local. El valor predeterminado es "scroll", lo que produce que el fondo se mueva cuando el contenedor tiene scroll, pero si queremos que el fondo se quede fijo podemos usar fixed.
+                    <br><br>
+                    body { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        background-image: url(fondo-degradado.png);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        background-attachment: fixed;<br>
+                    }
+                    <li>background-origin</li>
+                    Define dónde queremos que se pinte el fondo. De nuevo, no se usa mucho. Generalmente los fondos se pintan en todo el elemento, incluyendo el padding. Pero podríamos definir otros comportamientos como por ejemplo que se pinte solamente en el área del contenido, sin incluir el padding. <br><br>
+                    div { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        background-image: url(patron.png);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        background-repeat: no-repeat;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        background-origin: content-box;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        padding: 40px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        border: 3px solid red;<br>
+                    }
+                </ul>
+                <li>Múltiples fondos en un mismo elemento con CSS</li>
+                A partir de CSS 3 es posible aplicar muchos fondos de imagen a un mismo elemento. Para elllo simplemento podemos indicar todas las imágenes de fondo que queramos usar, separadas por comas. <br><br>
+                body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    background-color: #f5f5f5;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    background-image: url(fondo-degradado.png), url(patron.png);<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    background-position: 0, center;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    background-repeat: no-repeat, repeat;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    background-size: cover, auto;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    background-attachment: fixed, scroll;<br>
+                }                
+            </ul>
+        </p>
+        </div>
+        <div id="bordes">
+            <li>Bordes</li>            
+        Las propiedades básicas y específicas de los bordes en CSS son las siguientes: <br>
+        <img src="https://www.aulafacil.com/uploads/cursos/350/editor/css-lecc-15_15-4.es.jpg" alt="">
+        <ul>
+            <li>border-color</li>
+            <li>border-width</li>
+            <li>border-style</li>
+        </ul>
+        En primer lugar, border-color establece el color del borde, de la misma forma que lo hicimos en apartados anteriores de colores. En segundo lugar, con border-width podemos establecer la anchura o grosor del borde utilizando tanto palabras clave predefinidas como un tamaño concreto con cualquier tipo de las unidades ya vistas.
+        </div>
+        <div id="margenes">
+            <li>Márgenes</li>
+            <img src="https://lh4.googleusercontent.com/-1Piq3Ia65ws/UjHz7CeKS1I/AAAAAAAAAS0/rdDu26tLuho/s406/CU01028D_1.png" alt=""> <br>
+        En el modelo de cajas, los márgenes (margin) son los espacios exteriores de un elemento. Es decir, el espacio que hay entre el borde de un elemento y su exterior.
+        <ul>
+            <li>margin-top</li>
+            Establece un tamaño de margen superior.
+            <li>margin-left</li>
+            Establece un tamaño de margen a la izquierda.
+            <li>margin-right</li>
+            Establece un tamaño de margen a la derecha.
+            <li>margin-bottom</li>
+            Establece un tamaño de margen inferior.
+        </ul>
+        </div>
+        <div id="altura">
+            <img src="https://desarrolladoresweb.org/wp-content/uploads/Ancho-y-altura-de-imagen-con-CSS-ejemplo-codigo.jpg" alt="">
+            <li>Altura/Ancho</li>
+        <ul>
+            <li>Anchura</li>
+            La propiedad CSS que controla la anchura de la caja de elementos se denomina <code>width.</code>
+            <li>Altura</li>
+            La propiedad CSS que controla la altura de los elementos se denomina <code>height.</code>
+        </ul>
+        </div>
+    </ol>
+    </section>
+    <a href="#inicio" class="menu">Volver al principio</a>
+</body>
+</html>
